@@ -1,0 +1,16 @@
+const readline = require('readline');
+const inp = readline.createInterface({input:process.stdin});
+inp.on("line", (data) => {
+var a=data.split('');
+var s=0;
+var b=[];
+for(i=0;i<a.length;i++)
+{
+    if(a[i]==a[i+1])
+     {
+        s=1;
+        a.splice(i,i+1)
+    }
+}
+console.log(a.join(''))
+});
