@@ -1,163 +1,93 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Landing page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <style>
-.page {
-  background-color: white;
-  height: 500px;
-  width: 150%;
-  
-}
-.card {
-  position:absolute;
-  align:center;
-  left:35px;
-  right:600px;
-  
-}
-body {
-  margin: 0;
-  font-family: Arial;
-  background-image: linear-gradient(to bottom left,#78F6FC,#AF53FC);
-}
-
-.fly a {
-  float: right;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-#start{
-	border: 1px solid white;
-}
-.navgiation{
-	position:absolute;
-	left:50px;
-	right:350px;
-	height:400px;
-	width:400px;
-	padding:45px;
-	color:white;
-	font-family:Arial;
-	font-size:60px;
-}
-.navig{
-	position:absolute;
-	left:50px;
-	right:350px;
-	height:400px;
-	width:550px;
-	padding:45px;
-	color:white;
-	font-family:Helvetica,Arial,sans-serif;
-	font-size:23px;
-}
-.button1{
-	position:absolute;
-	left:90px;
-	width:150px;
-	border-radius: 30px;
-	background-color: #05E449;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	display: inline-block;
-	font-size:15px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-.login{
-position:absolute;
-right:90px;
-width:500px;
-height:400px;
-background-color:white;
-}
-.login input[type=text]
-{
-  width: 70%;
-  padding: 10px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  background-color:#F4F5F5;
-}
-.login input[type=button]
-{
-  width: 70%;
-  padding: 10px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-#option{
-	width: 70%;
-	padding: 10px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-	background-color:#F4F5F5;
-}
-.button {
-  background-color:blue;
-  border-radius: 30px;
-  color: white;
-  margin: 4px 2px;
-  border:1px solid;
+p{
+  float:right;
+  color:white;
   }
+.btnn{
+ float:right;
+ color:white;
+ border:1px solid white;
+ }
+ #white{
+  background: inherit;
+ background-color:white;
+ padding:50px;
+ height:200px;
+ clip-path: polygon(0 19%,100% 0vw,100% 100%,0 100%); 
+ margin-top:-90px; 
+
+ }
+
+ #bgc{
+  background-image: linear-gradient(to bottom left,#78FCFA,#8F5BDC);
+  margin:auto;
+  padding:50px;
+  height:600px;
+  border-radius: 2px;
+  }
+ body{
+  background-color:#eadada;
+  font-family:Arial;
+ }
+ a{
+ color:white;
+ }
+ body{
+ border:1px white;
+ }
+ #round{
+ border-radius:16px;
+ }
 </style>
 </head>
 <body>
-<div class="fly">
- <div class="landing">
-<p class="topic"><span style="position:absolute; right:350px; color:white; top:2%; left:100px;font-family:Arial;font-size:17"> Landing</span></p>
- </div>
-  <p class="review"><span style=""><a href="#get"><span id="start"> Get Started </span></a></p>
-  <p class="review"><a href="#FAQ">FAQ</a></p>
-  <p class="review"><a href="#pricing">Pricing</a></p>
-  <p class="review"><a href="#reviews">Reviews</a></p>
-  <p class="review"><a href="#feature">Features</a></p>
-  <p class="review"><a href="#home">Home</a></p>
+<div class="container" id="bgc"style="color:white;">
+<div class="navigation">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="color:white">Landing</label>
+<button class="btnn">Get Started</button>
+  <p><a href="#home">Home</a>
+  <a href="#news">&nbsp;&nbsp;Features</a>
+  <a href="#contact">&nbsp;&nbsp;Reviews</a>
+  <a href="#about">&nbsp;&nbsp;Pricing</a>
+  <a href="#about">&nbsp;&nbsp;FAQ</a></p>&nbsp;&nbsp;
+  </div><br><br>
+<div class="container" style="color:white;">
+<br>
+<div class="row">
+<div class="col-md-5">
+<h2 style="font-size:58px">Fly makes you faster</h2>
+<label>New free template by
+ uicookies.com. For more templates visit the site. Lorem ispum dolor sit amet,consectotur adipisicing elit</label>
+ <center><button class="btn btn-success" id="round">SEE PRICING</button></center>
 </div>
-<div>
-
-<div class="navgiation">
-	 <p>Fly makes you faster</p>
-</div><br><br><br><br>
-<div class="login"><br><br>
-	<center><font style="font-family:Arial;font-size:34">Sign up for Free</center><br>
-	<center><input type = "text" placeholder = "Full name" /></center>
-	<center><input type = "text" placeholder = "Email" /></center>
-	<center><input type = "text" placeholder = "Email" /></center>
-	<center><select id="option">
-  <option>Type</option>
-  <option>Student</option>
-  <option>Staff</option>
-</select></center>
-	</center>
-	<center>
-	<input type = "button" class="button" value = "Register">
-	</center>
+<div class="col-md-1"></div>
+<div class="col-md-5" id="login" style="background-color:white";>
+<center style="color:black;">Sign Up for Free</center>
+<input type="text" placeholder="Full Name" class="form-control"><br>
+<input type="text" placeholder="E-mail" class="form-control"><br>
+<input type="text" placeholder="E-mail" class="form-control"><br>
+<select class="form-control">
+<option>Type</option>
+<option>Type</option>
+<option>Type</option>
+</select><br> 
+<button class="btn btn-primary form-control">Register</button>
 </div>
-<div class="navig"><br><br><br><br>
-<p>New free template by <font style="color:light blue">unicookies.com</font>. For more templates visit the site. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div></div><br><br><br><br><br><br><br>
-<div class="button1">SEE PRICING</div>
-</div><br><br><br>
-<div class="page">
-<div class="card">
-<br><br><center><br>
-<font style="font-size:13px;color:grey">FEATURES</font><br>
-<font style="font-size:18px">
-App Features
-</center></font>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row" id="white">
+<div class="col-md-4"></div>
+<div class="col-md-4"><br><br>
+<center><label>FEATURES</label><br>
+<label style="font-size:28px;font-family:calibri"><b>App Features</b></label></center>
 </div>
 </div>
 </body>
-</html>
+</html> 
