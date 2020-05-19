@@ -11,7 +11,7 @@ href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 table,th,td{
 border:1px solid #716a6c;
 border-collapse:collapse:
-
+margin-top:20px;
 }
  .container{
  width:60%;
@@ -25,7 +25,7 @@ border-collapse:collapse:
  padding-left:100px;
  
 }
- }
+ 
  h4{
  color:#254b7b;
  font-size:24px;
@@ -62,20 +62,22 @@ padding-left:300px;
 #home{
 padding-left:0px;
 }
+#dropdown{
+padding-left:95%;
+border:none;
+margin-top:0px;
+}
 </style>
 </head>
 <body>
 <div class="input">
-<img src="google.png" style="width:200px;height:80px"/><input type="text" value="Google search page">
+<img src="google.png" style="width:200px;height:80px"/><input type="text" value="Google search page"> 
 
-<i class="fas fa-box" style="font-size:24px;padding-left:100px"></i>
+<i class="fas fa-box" style="font-size:24px;padding-left:90px"></i>
 <i class="fa fa-bell" style="font-size:24px;padding-left:10px"></i>
 <i class="fa fa-user-circle" style="font-size:28px;padding-left:10px"></i>
 </div>
 <div class="container">
-
- <!--i class="fa fa-search" style="font-size:24px"></i-->
-
 <div class="topnav">
   <a href="#home"id="home">All</a>
   <a href="#about">images</a>
@@ -93,30 +95,41 @@ padding-left:0px;
   <a href="google.com">https://yoast.com > SEO blog > SEO basics</a>
   <label>Feb 26,2018 - If you <b>Google</b> something you'll end up on the <b>Google Search </b>Engine <b>Results Page.</b> What does this <b>page</b> show? Which elements do you see. ...</label>
   <table class="align"> 
-  <tr  style="color:#716a6c">
+  <tr  style="color:#716a6c;height:50px;width:100px;">
   <th>people also ask</th>
   </tr>
   <tr>
-  <td>What is a Google Search results page?</td>
+  <td>What is a Google Search results page?
+  <select id="dropdown">
+  <option></option>
+  </select></td>
    </tr>
   <tr>
-  <td>What do Google search resutls mean?</td>
+  <td>What do Google search resutls mean?
+  <select id="dropdown">
+  <option></option>
+  </select></td>
   </tr>
   <tr>
-  <td>What is SERP SEO</td>
+  <td>What is SERP SEO?
+  <select id="dropdown">
+  <option></option>
+  </select></td>
   </tr>
   <tr>
-  <td>What is snippet Google</td>
+  <td>What is snippet Google?
+  <select id="dropdown">
+  <option></option>
+  </select></td>
   </tr>
   </table><br>
   <h4>Search Engine Results Page - Wikipedia</h4>
   <a href="google.com">https://e.wikipedia.org/wiki/search_engine_results_page> SEO blog > SEO basics</a>
   <label>Search Engine Results<b> Page</b> are the<b> Pages</b> displayed by the search engines in response...Rich snippets are displayed by<b> Google</b> in<b>search results Page</b> When a website contains content in structured data markup. Structured data...</label>
   <label>components</label>
-  
-    <label>Search query</label>
-	<label>Organic results</label>
-	<label>Rich snippets</label>
+  <label>Search query</label>
+  <label>Organic results</label>
+  <label>Rich snippets</label>
  <br>  
   <h4>2018's Guide to Google Search Engine Results Page(SERP)- oberlo</h4>
   <a href="google.com">https://oberlo.com > blog </a>
