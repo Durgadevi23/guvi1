@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<style>
+.try{
+margin-left:500px;
+width:10%;
+}
+#demo{
+padding-top:30px;
+margin-left:540px;
+width:10%;
+}
+</style>
+</head>
+<body>
+<p id="demo"></p> 
+<button onclick="myFunction()" class="try">SUBMIT</button>
+<p id="demo1">l</p>
+
+<script>
+function myFunction() {
+  var a=[];
+  var c=0;
+  for(i=0;i<5;i++)
+  {
+  var min=0;
+  var max=9;
+  var r = Math.round(Math.random() * (+max - +min) + +min); 
+  if(i == 0)
+  {
+  a.push(r)
+  }
+  else{
+  for(i=0;i<a.length;i++)
+  {
+  if(r==a[i])
+  {
+  myFunction()
+  }
+  else{
+  c=1;
+  }
+ }
+ if(c==1)
+ {
+ a.push(r)
+ }
+ }
+}
+if(a.length==5){
+document.getElementById("demo").innerHTML = a.join("");
+}
+}
+</script>
+ </body>
+</html>
+ 
+        
