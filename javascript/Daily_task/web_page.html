@@ -4,7 +4,7 @@
 	<link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 	* {
 	  box-sizing: border-box;
@@ -12,6 +12,7 @@
 	body{
 	color:white;
 	font-family:Sans-serif;
+	padding-top:10px;
 	}
 	#col{
 	 float: left;
@@ -21,7 +22,7 @@
 	}
 
 	.upload{
-	  background-color:red;
+	  background-color:#b74d4d;
 	  border-radius:12px;
 	  border: none;
 	  width:100px;
@@ -50,10 +51,11 @@
 	}
 	p{
 	padding-left:20px;
+	color:#d0c7c7;
 	}
 	.search{
 	width:100%;
-	height:30px;
+	height:35px;
 	background-color:black;
 	border: none;
 	}
@@ -73,7 +75,12 @@
 	 height: 50%;
 	 overflow: scroll;
 	}
-	 
+	#icon{
+		color:#8c8080;
+	}
+    #add{
+	padding-left:80px;
+	  }
 	</style>
 	</head>
 	<body>
@@ -87,18 +94,20 @@
 		<button class="upload">Upload</button>
 		</div>
 		<input type="text" class="search" style="margin-top:40px;" placeholder="search files"/>
-		<h5 style="margin-top:10px;">CATEGORIES</h5>
+		<h5 style="margin-top:20px;">CATEGORIES</h5>
 		<p style="background-color:black;">Photos</p>
 		<p>videos</p>
 		<p>project</p>
-		<h5>ALBUMS</h5>
+		<h5>ALBUMS <i class="fa fa-plus-circle" id="add"></i> </h5>
 		<p>Subcarpathia 2016</p>
 		<p>summer 2015</p>
 		<p>Aapen 2015</p>
 		<p>croatia 2015</p>
 	  </div>
 	  <div class="column">
-	   <label><b>Subcarpathia 2016</b> <span style="color:">(8 photos)</span></label>
+	   <label><b>Subcarpathia 2016</b> <span >(8 photos)</span></label>
+	   <button style="margin-left:550px;"><i class="fa fa-play" id="icon"></i></button>
+	   <button><i class="fa fa-share-alt" style="color:#8c8080;"></i></button>
 	   <div class="row">
 	   <div class="col-md-3">
 	   <img src="image1.jpg" alt="Deer">
