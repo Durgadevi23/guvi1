@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body id="newspaper">
+<script>
+var a=document.getElementById("newspaper");
+a.style.backgroundColor="lightgray";
+
+var div1=document.createElement("div");
+var h1=document.createElement("h1");
+h1.innerHTML='The Rising Sun';
+h1.setAttribute("style","margin-left:500px")
+div1.appendChild(h1);
+
+var hr=document.createElement("hr");
+div1.appendChild(hr);
+
+var t=document.createTextNode("Printed on october 24,2019");
+div1.appendChild(t);
+var y=document.createElement("label");
+y.innerHTML="www.thesunrise.com";
+y.setAttribute("style","margin-left:350px")
+div1.appendChild(y);
+var z=document.createElement("label");
+z.innerHTML="Total Pages is 32"
+z.setAttribute("style","margin-left:500px")
+div1.appendChild(z);
+	
+var hr=document.createElement("hr");
+div1.appendChild(hr);
+
+var h2=document.createElement("h2");
+
+var i=document.createElement('img');
+i.src='image1.jpg';
+i.setAttribute("style","width:700px");
+div1.appendChild(i);
+h2.innerHTML="ELECTRIC CARS:THE FUTURE OF TRANSPORTATION"
+h2.setAttribute("style","width:1000px");
+h2.style.fontSize="40px";
+div1.appendChild(h2);
+var p=document.createElement("p");
+p.setAttribute("style","width:800px");
+p.style.fontSize="30px";
+p.innerHTML="with rapid advances in batteries and other technologies and increasingly supportive legislation and policies and Canada is starting to join the global shift to cleaner and electric-powered transportation."
+var p1=document.createElement("p");
+p1.innerHTML="components such as batteries, fuel cells, chargers, electric motors, power electronics, smart grids,monitoring software, and information services.These technologies are now being used in on-road, off-road.";
+p1.setAttribute("style","width:800px");
+p1.style.fontSize="30px";
+div1.appendChild(p);
+div1.appendChild(p1);
+
+document.body.appendChild(div1);
+</script>
+</body>
+</html>
