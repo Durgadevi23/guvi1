@@ -5,12 +5,12 @@
 <body id="newspaper">
 <script>
 var a=document.getElementById("newspaper");
-a.style.backgroundColor="lightgray";
+a.style.backgroundColor="#d8cece";
 
 var div1=document.createElement("div");
 var h1=document.createElement("h1");
 h1.innerHTML='The Rising Sun';
-h1.setAttribute("style","margin-left:500px")
+h1.setAttribute("style","margin-left:450px;font-size:60px")
 div1.appendChild(h1);
 
 var hr=document.createElement("hr");
@@ -20,31 +20,38 @@ var t=document.createTextNode("Printed on october 24,2019");
 div1.appendChild(t);
 var y=document.createElement("label");
 y.innerHTML="www.thesunrise.com";
-y.setAttribute("style","margin-left:350px")
+y.setAttribute("style","margin-left:280px")
 div1.appendChild(y);
 var z=document.createElement("label");
-z.innerHTML="Total Pages is 32"
+z.innerHTML="Total Pages is 32 & Total cost is $5"
 z.setAttribute("style","margin-left:500px")
 div1.appendChild(z);
 	
+var hr=document.createElement("hr");
+div1.appendChild(hr);
 var hr=document.createElement("hr");
 div1.appendChild(hr);
 document.body.appendChild(div1);
 
 var div=document.createElement("div");
 var dl=document.createElement("div");
-dl.style.width="60%"
 var dr=document.createElement("div");
-dr.style.width="30%"
-
-
+dl.style.position="absolute";
+dl.style.width="60%"
+dl.style.height="flex";
+dl.style.left="10px";
+dr.style.position="absolute";
+dr.style.width="100%"
+dr.style.height="flex";
+dr.style.left="10px";
 
 var div2=document.createElement("div");
 var h2=document.createElement("h2");
 h2.innerHTML="ELECTRIC CARS:THE FUTURE OF TRANSPORTATION";
 var i=document.createElement("img");
 i.src="image1.jpg"
-i.style.width="100%"
+i.style.width="80%"
+i.style.height="300px"
 var p=document.createElement("p");
 p.innerHTML="with rapid advances in batteries and other technologies and increasingly supportive legislation and policies and Canada is starting to join the global shift to cleaner and electric-powered transportation.For over 20 years, Canadian companies and research institutions have been engaging in research and development applicable to electric vehicle (EV)."
 var p1=document.createElement("p");
@@ -57,25 +64,25 @@ dl.appendChild(div2);
 div.appendChild(dl);
 
 var table=document.createElement("table");
-var titler=table.insertRow(0);
-var titlec=titler.insertCell(0);
+var tr=table.insertRow(0);
+var tc=tr.insertCell(0);
 var h3=document.createElement("h3");
 h3.innerHTML="WORLD'S FIRST UNDER WATER HOTEL NILA";
 h3.style.width="300px"
-titlec.appendChild(h3);
-titler.appendChild(titlec);
-table.appendChild(titler);
+tc.appendChild(h3);
+tr.appendChild(tc);
+table.appendChild(tr);
 dl.appendChild(table);
 div.appendChild(dl);
 
-var titlec=titler.insertCell(1);
-titlec.setAttribute("style","padding-left:150px");
+var tc=tr.insertCell(1);
+tc.setAttribute("style","padding-left:150px");
 var h3=document.createElement("h3");
 h3.innerHTML="THE TALLEST STATUE IN THE WORLD";
 h3.style.width="250px"
-titlec.appendChild(h3);
-titler.appendChild(titlec);
-table.appendChild(titler);
+tc.appendChild(h3);
+tr.appendChild(tc);
+table.appendChild(tr);
 dl.appendChild(table);
 div.appendChild(dl);
 
@@ -112,7 +119,6 @@ dl.appendChild(table1);
 
 var tc=tr.insertCell(3);
 tc.style.width="250px"
-//tc.setAttribute("style","padding:10px;padding-bottom:50px");
 var p=document.createElement("p");
 p.innerHTML="To learn more, visit Electric Mobility Canada.You can help these cars truly become the future in a few ways.Fuel cells, power electronics, smart grids.";
 tc.appendChild(p);
@@ -123,25 +129,25 @@ dl.appendChild(table1);
 
 
 var table=document.createElement("table");
-var titler=table.insertRow(0);
-var titlec=titler.insertCell(0);
+var tr=table.insertRow(0);
+var tc=tr.insertCell(0);
 var h3=document.createElement("h3");
 h3.innerHTML="ELECTRIC CARS:THE FUTURE OF TRANSPORTATION";
 h3.style.width="300px"
-titlec.appendChild(h3);
-titler.appendChild(titlec);
-table.appendChild(titler);
+tc.appendChild(h3);
+tr.appendChild(tc);
+table.appendChild(tr);
 dl.appendChild(table);
 div.appendChild(dl);
 
-var titlec=titler.insertCell(1);
-titlec.setAttribute("style","padding-left:150px");
+var tc=tr.insertCell(1);
+tc.setAttribute("style","padding-left:150px");
 var h3=document.createElement("h3");
 h3.innerHTML="SUBSIDE BOMB ATTACK AT TUMS";
 h3.style.width="250px"
-titlec.appendChild(h3);
-titler.appendChild(titlec);
-table.appendChild(titler);
+tc.appendChild(h3);
+tr.appendChild(tc);
+table.appendChild(tr);
 dl.appendChild(table);
 div.appendChild(dl);
 
@@ -158,7 +164,6 @@ dl.appendChild(table1);
 
 var tc=tr.insertCell(1);
 tc.style.width="250px"
-//tc.setAttribute("style","padding:10px;padding-bottom:50px");
 var p=document.createElement("p");
 p.innerHTML="You can also sign up to receive emails from CLF letting you know when you can make a difference..Fuel cells, power electronics, smart grids.";
 tc.appendChild(p);
@@ -206,10 +211,49 @@ div.appendChild(dl);
 document.body.appendChild(div);
 
 var div2=document.createElement("div");
+div2.setAttribute("style","margin-left:900px");
 var h3=document.createElement("h3");
-h3.innerHTML="A CHINESE COMPANY TO BUILD A FAKE MOON TO REPLACE THE CITY"
+h3.innerHTML="A CHINESE COMPANY TO BUILD A FAKE MOON TO REPLACE THE CITY";
+var i=document.createElement("img");
+i.src="image2.jpg";
+i.style.width="400px"
+i.style.heigth="400px"
+var p=document.createElement("p");
+p.innerHTML="With over 80% of Canada’s electricity produced from non-emitting sources, EVs can play a major role in reducing greenhouse gas emissions from transportation, which now represents 25% of all emissions. EVs are for autonomous vehicles. "
+var p1=document.createElement("p");
+p1.innerHTML="Car-sharing strategies, which are creating a paradigm shift in how Canadians travel. This shift will lead to fewer collisions, fewer vehicles on the road, and more sustainable transportation."
+div2.appendChild(i);
 div2.appendChild(h3);
+div2.appendChild(p);
+div2.appendChild(p1);
 dr.appendChild(div2);
+
+var div3=document.createElement("div");
+div3.setAttribute("style","margin-left:900px");
+div3.style.border="1px solid black";
+var h3=document.createElement("h3");
+h3.innerHTML="DOKLAM NOT FREE FOR OF PLA TROOPS"
+var p=document.createElement("p");
+p.innerHTML="Afordability. Electric cars are less expensive to fuel and maintain than traditional combustion engine vehicles. And as new models come out, costs to buy electric cars are plummeting."
+div3.appendChild(h3);
+div3.appendChild(p);
+
+var h3=document.createElement("h3");
+h3.innerHTML="PLANE CLASHES AT INDONESHIA"
+var p=document.createElement("p");
+p.innerHTML="Growing Infrastructure. You can plug your car in right at home. And more and more areas have charging stations for when you’re on the go to indonishia"
+div3.appendChild(h3);
+div3.appendChild(p);
+
+
+var h3=document.createElement("h3");
+h3.innerHTML="FIVE PROTESTERS KILLED IN KDPF FIRING IN J&K "
+var p=document.createElement("p");
+p.innerHTML="There are now more than 250 Canadian businesses involved in EV technologies creating over 30,000 jobs and this is expected to grow"
+div3.appendChild(h3);
+div3.appendChild(p);
+
+dr.appendChild(div3);
 div.appendChild(dr);
 document.body.appendChild(div);
 
