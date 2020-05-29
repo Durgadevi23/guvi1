@@ -6,9 +6,16 @@
 <body id="search">
 <script>
 var a=document.getElementById("search");
-a.setAttribute("style","width:700px;margin-left:300px");
+var d1=document.createElement("div");
+var i=document.createElement("img");
+i.src="image1.jpg";
+i.style.width="400px"
+i.style.heigth="400px"
+d1.appendChild(i);
+document.body.appendChild(d1);
 
 var div=document.createElement("div");
+div.setAttribute("style","width:700px;margin-left:300px");
 var r1=document.createElement("input");
 r1.setAttribute("type","text");
 r1.style.width="700px";
@@ -26,10 +33,12 @@ var lab=document.createElement("label");
 lab.innerHTML="About 866,000,000 results(0.77 seconds)"
 div.appendChild(lab);
 var h4=document.createElement("h4");
+h4.setAttribute("style","color:#254b7b;font-size:24px;");
 h4.innerHTML="Elements of Google Search Engine Results Page. SEO for beginners..."
 div.appendChild(h4);
 var lab1=document.createElement("label");
 lab1.innerHTML="https://yoast.com > SEO blog > SEO basics"
+lab1.style.color="#057905"
 div.appendChild(lab1);
 var lab=document.createElement("p");
 lab.innerHTML="Feb 26,2018 - If you <b>Google</b> something you'll end up on the <b>Google Search </b>Engine <b>Results Page.</b> What does this <b>page</b> show? Which elements do you see. ..."
@@ -68,6 +77,47 @@ r4.style.height="30px";
 r4.appendChild(p3);
 div.appendChild(r4);
 
-</script>
+var h4=document.createElement("h4");
+h4.innerHTML="Search Engine Results Page - Wikipedia"
+h4.setAttribute("style","color:#254b7b;font-size:24px;margin-top:0px");
+div.appendChild(h4);
+
+var lab1=document.createElement("label");
+lab1.innerHTML="https://e.wikipedia.org/wiki/search_engine_results_page> SEO blog > SEO basics"
+lab1.style.color="#057905"
+div.appendChild(lab1);
+var lab=document.createElement("p");
+lab.innerHTML="Search Engine Results<b> Page</b> are the<b> Pages</b> displayed by the search engines in response...Rich snippets are displayed by<b> Google</b> in<b>search results Page</b> When a website contains content in structured data markup. Structured data..."
+div.appendChild(lab);
+
+var h4=document.createElement("h4");
+h4.innerHTML="2018's Guide to Google Search Engine Results Page(SERP)- oberlo"
+h4.setAttribute("style","color:#254b7b;font-size:24px;");
+div.appendChild(h4);
+var lab1=document.createElement("label");
+
+lab1.innerHTML="https://oberlo.com > blog"
+lab1.style.color="#057905"
+lab1.style.margintop="10px"
+div.appendChild(lab1);
+var lab=document.createElement("p");
+lab.innerHTML="Jul 10,2018 - These new SERP features - SERP is shorthand for <b>search</b> engine<b> results page- </b>have improved the experience for users, but they're also.."
+div.appendChild(lab);
+
+var h4=document.createElement("h4");
+h4.innerHTML="SERP:The 2018 Guide To Google Search Engine Results"
+h4.setAttribute("style","color:#254b7b;font-size:24px;");
+div.appendChild(h4);
+var lab1=document.createElement("label");
+
+lab1.innerHTML="https://iignitevisibility.com/serp"
+lab1.style.color="#057905"
+lab1.style.margintop="10px"
+div.appendChild(lab1);
+var lab=document.createElement("p");
+lab.innerHTML="May 1,2018 - SERP refers to a<b> search</b> engine<b> results page- </b>the page that appears with a user's results when they type a <b>Search </b> into <b>Google </b>(or any <b>scratch.. </b>"
+div.appendChild(lab);
+
+  </script>
 </body>
 </html>
