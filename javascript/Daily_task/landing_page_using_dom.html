@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LANDING USING DOM</title>
+</head>
+<body id="landing">
+<script>
+var p=document.getElementById("landing");
+
+//var d=document.createElement("div");
+p.setAttribute("style","background-color:#8F5BDC;width:70%;width:70%;margin-left:100px")
+
+var div=document.createElement("div");
+var ul=document.createElement("ul");
+var l1=document.createElement("li");
+l1.innerHTML="Landing";
+l1.setAttribute("style","margin-top:50px;display:inline-block;font-size:20px");
+ul.appendChild(l1);
+var l2=document.createElement("li");
+l2.innerHTML="Home";
+l2.setAttribute("style","margin-left:200px;display:inline-block;font-size:20px");
+ul.appendChild(l2);
+var l3=document.createElement("li");
+l3.innerHTML="Features";
+l3.setAttribute("style","margin-left:40px;display:inline-block;font-size:20px");
+ul.appendChild(l3);
+var l4=document.createElement("li");
+l4.innerHTML="Review";
+l4.setAttribute("style","margin-left:40px;display:inline-block;font-size:20px");
+ul.appendChild(l4);
+var l5=document.createElement("li");
+l5.innerHTML="Pricing";
+l5.setAttribute("style","margin-left:40px;display:inline-block;font-size:20px");
+ul.appendChild(l5);
+var l6=document.createElement("li");
+l6.innerHTML="FAQ";
+l6.setAttribute("style","margin-left:40px;display:inline-block;font-size:20px");
+ul.appendChild(l6);
+var l7=document.createElement("button");
+l7.innerHTML="Get Started";
+l7.setAttribute("style","margin-left:40px;display:inline-block;font-size:20px;border:1px white");
+ul.appendChild(l7);
+div.appendChild(ul);
+document.body.appendChild(div);
+
+var div2=document.createElement("div");
+div2.setAttribute("style","width:500px;float:left;margin-top:-20px");
+
+var p=document.createElement("p");
+p.setAttribute("style","font-size:60px;margin-left:50px;margin-top:50px;margin-bottom:0px;");
+p.innerHTML="Fly makes you faster";
+div2.appendChild(p);
+
+var p=document.createElement("p");
+p.setAttribute("style","font-size:24px;margin-left:50px;margin-top:0px;float:left;margin-bottom:0px;");
+p.innerHTML="New free template by uicookies.com. For more templates visit the site. Lorem ispum dolor sit amet,consectotur adipisicing elit"
+div2.appendChild(p);
+document.body.appendChild(div2);
+
+var div3=document.createElement("div");
+div3.setAttribute("style","width:50%;margin-left:600px;height:320px;margin-top:50px;border:1px solid white;background-color:white");
+var p1=document.createElement("p");
+p1.setAttribute("style","font-size:20px;width:400px;margin-top:10px;margin-bottom:0px;float:left;text-align:center");
+p1.innerHTML="Sign Up for Free";
+div3.appendChild(p1);
+
+var p1=document.createElement("input");
+p1.setAttribute("type","text");
+p1.setAttribute("style","font-size:20px;width:80%;margin-left:20px;margin-top:20px;height:30px");
+p1.placeholder="Full Name";
+div3.appendChild(p1);
+
+var p2=document.createElement("input");
+p2.setAttribute("type","text");
+p2.setAttribute("style","font-size:20px;width:80%;margin-left:20px;margin-top:20px;height:30px");
+p2.placeholder="E-mail";
+div3.appendChild(p2);
+
+var p3=document.createElement("input");
+p3.setAttribute("type","text");
+p3.setAttribute("style","font-size:20px;width:80%;margin-left:20px;margin-top:20px;height:30px");
+p3.placeholder="E-mail";
+div3.appendChild(p3);
+
+var r2=document.createElement("select");
+var p2=document.createElement("option");
+r2.setAttribute("style","font-size:20px;width:81%;margin-left:20px;margin-top:20px;height:30px");
+p2.innerHTML="Type"
+r2.appendChild(p2);
+div3.appendChild(r2);
+
+var b=document.createElement("button");
+b.innerHTML="Register";
+b.setAttribute("style","font-size:20px;width:81%;margin-left:20px;margin-top:20px;height:30px");
+div3.appendChild(b);
+
+document.body.appendChild(div3);
+document.body.appendChild(d);
+</script>
+</body>
