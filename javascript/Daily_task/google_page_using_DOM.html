@@ -6,25 +6,81 @@
 <body id="search">
 <script>
 var a=document.getElementById("search");
-var d1=document.createElement("div");
+
+var d=document.createElement("div");
 var i=document.createElement("img");
-i.src="image1.jpg";
-i.style.width="400px"
-i.style.heigth="400px"
-d1.appendChild(i);
-document.body.appendChild(d1);
+i.style.top="20px";
+i.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCgkQqj93tKksWCM8k4DGB2dTTV9r87WtfuXfnOdwjDi8fRwHj&usqp=CAU");
+i.setAttribute("style","width:200px;position:absolute;")
+d.appendChild(i);
+
+var i1=document.createElement("img");
+i1.setAttribute("style","width:30px;height:30px;position:absolute;margin-left:1135px")
+i1.style.top="20px";
+i1.src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAIVBMVEX///8AAAD09PTMzMyTk5PJycmQkJDl5eWWlpb6+vrOzs4U/fPXAAABRklEQVR4nO3cQW6DMBBAUQrYGO5/4HY/SRlZhCL3vf1E+bCKY3uaAAAAAAAAAACepdT1XNvD3JaZq1uY21tmrlxYWL8y5vhkUnPxm86puXph4dpZuKTmls7CplChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKhylcLyxsnYVHau7oLLzyHe5zxovBj87FvR8AAADA77aynIuLEdOcmSsvfuQnxpYSz2n0c97iXaHVRIUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUeH/h+P/j374X47h7LwYAAAD8D+PfqdB7L0ZuJeoJ92I8c63tyrtNnlk4/jtUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChwk8Ujn/eotR2am1xb8SWmGs1npvYfz7tfC4+GQAAAAAAAACAv/UNuK1EHCwGtosAAAAASUVORK5CYII="
+d.appendChild(i1);
+
+var i2=document.createElement("img");
+i2.setAttribute("style","width:30px;height:30px;position:absolute;margin-left:1185px")
+i2.style.top="20px";
+i2.src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRl6L41T3CxzgPztSXhb60g1SVEq7GIlIzGun4SC862Hwnga_fR&usqp=CAU"
+d.appendChild(i2);
+
+var i3=document.createElement("img");
+i3.setAttribute("style","width:30px;height:30px;position:absolute;margin-left:1235px")
+i3.style.top="20px";
+i3.src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDer1Z0Ag3qoqkOhL8qgXzC8kxKU2CNDgK7_IhhnZdJfLLydTy&usqp=CAU"
+d.appendChild(i3);
+
+document.body.appendChild(d);
 
 var div=document.createElement("div");
-div.setAttribute("style","width:700px;margin-left:300px");
+div.setAttribute("style","width:700px;margin-left:300px;");
 var r1=document.createElement("input");
 r1.setAttribute("type","text");
 r1.style.width="700px";
 r1.style.height="40px"
 r1.value="Google Search Page"
+r1.style.fontSize="18px"
 div.appendChild(r1);
-var p=document.createElement("p");
-p.innerHTML="All images News Videos   More  setting tools"
-div.appendChild(p);
+
+var ul=document.createElement("ul");
+ul.style.position="relative";
+var l1=document.createElement("li");
+l1.innerHTML="All";
+l1.style.display="inline-block";
+var l2=document.createElement("li");
+l2.innerHTML="Images";
+l2.style.display="inline-block";
+l2.style.marginLeft="30px";
+var l3=document.createElement("li");
+l3.innerHTML="News";
+l3.style.display="inline-block";
+l3.style.marginLeft="30px";
+var l4=document.createElement("li");
+l4.innerHTML="Videos";
+l4.style.display="inline-block";
+l4.style.marginLeft="30px";
+var l5=document.createElement("li");
+l5.innerHTML="More";
+l5.style.display="inline-block";
+l5.style.marginLeft="30px";
+var l6=document.createElement("li");
+l6.innerHTML="Tools";
+l6.style.display="inline-block";
+l6.style.marginLeft="110px";
+var l7=document.createElement("li");
+l7.innerHTML="Settings";
+l7.style.display="inline-block";
+l7.style.marginLeft="35px";
+ul.appendChild(l1);
+ul.appendChild(l2);
+ul.appendChild(l3);
+ul.appendChild(l4);
+ul.appendChild(l5);
+ul.appendChild(l6);
+ul.appendChild(l7);
+div.appendChild(ul);
 
 var hr=document.createElement("hr");
 div.appendChild(hr);
@@ -33,29 +89,32 @@ var lab=document.createElement("label");
 lab.innerHTML="About 866,000,000 results(0.77 seconds)"
 div.appendChild(lab);
 var h4=document.createElement("h4");
-h4.setAttribute("style","color:#254b7b;font-size:24px;");
+h4.setAttribute("style","color:#254b7b;font-size:24px;margin-top:10px;margin-bottom:2px");
 h4.innerHTML="Elements of Google Search Engine Results Page. SEO for beginners..."
 div.appendChild(h4);
 var lab1=document.createElement("label");
 lab1.innerHTML="https://yoast.com > SEO blog > SEO basics"
-lab1.style.color="#057905"
+lab1.setAttribute("style","color:#057905;font-size:19px;margin-top:3px");
 div.appendChild(lab1);
 var lab=document.createElement("p");
 lab.innerHTML="Feb 26,2018 - If you <b>Google</b> something you'll end up on the <b>Google Search </b>Engine <b>Results Page.</b> What does this <b>page</b> show? Which elements do you see. ..."
+lab.setAttribute("style","color:#808080;font-size:18px;margin-top:5px");
 div.appendChild(lab);
 document.body.appendChild(div);
 
 var r1=document.createElement("select");
 var p=document.createElement("option")
 p.innerHTML="What is a Google Search results page?"
+r1.setAttribute("style","font-size:18px");
 r1.style.width="700px";
-r1.style.height="30px";
+r1.style.height="40px";
 r1.appendChild(p);
 div.appendChild(r1);
 
 var r2=document.createElement("select");
 var p2=document.createElement("option")
 p2.innerHTML="What is a Google Search results page?"
+r2.setAttribute("style","font-size:18px");
 r2.style.width="700px";                                      
 r2.style.height="30px";
 r2.appendChild(p2);
@@ -64,6 +123,7 @@ div.appendChild(r2);
 var r3=document.createElement("select");
 var p3=document.createElement("option")
 p3.innerHTML="What do Google search resutls mean?"
+r3.setAttribute("style","font-size:18px");
 r3.style.width="700px";
 r3.style.height="30px";
 r3.appendChild(p3);
@@ -72,6 +132,7 @@ div.appendChild(r3);
 var r4=document.createElement("select");
 var p3=document.createElement("option")
 p3.innerHTML="What is SERP SEO?"
+r4.setAttribute("style","font-size:18px");
 r4.style.width="700px";
 r4.style.height="30px";
 r4.appendChild(p3);
@@ -79,45 +140,47 @@ div.appendChild(r4);
 
 var h4=document.createElement("h4");
 h4.innerHTML="Search Engine Results Page - Wikipedia"
-h4.setAttribute("style","color:#254b7b;font-size:24px;margin-top:0px");
+h4.setAttribute("style","color:#254b7b;font-size:24px;margin-top:10px;margin-bottom:2px");
 div.appendChild(h4);
 
 var lab1=document.createElement("label");
 lab1.innerHTML="https://e.wikipedia.org/wiki/search_engine_results_page> SEO blog > SEO basics"
-lab1.style.color="#057905"
+lab1.setAttribute("style","color:#057905;font-size:19px;margin-top:3px");
 div.appendChild(lab1);
 var lab=document.createElement("p");
+lab.setAttribute("style","color:#808080;font-size:18px;margin-top:5px");
 lab.innerHTML="Search Engine Results<b> Page</b> are the<b> Pages</b> displayed by the search engines in response...Rich snippets are displayed by<b> Google</b> in<b>search results Page</b> When a website contains content in structured data markup. Structured data..."
 div.appendChild(lab);
 
 var h4=document.createElement("h4");
 h4.innerHTML="2018's Guide to Google Search Engine Results Page(SERP)- oberlo"
-h4.setAttribute("style","color:#254b7b;font-size:24px;");
+h4.setAttribute("style","color:#254b7b;font-size:24px;margin-top:5px;margin-bottom:2px");
 div.appendChild(h4);
 var lab1=document.createElement("label");
 
 lab1.innerHTML="https://oberlo.com > blog"
-lab1.style.color="#057905"
-lab1.style.margintop="10px"
+lab1.setAttribute("style","color:#057905;font-size:19px;margin-top:3px");
 div.appendChild(lab1);
 var lab=document.createElement("p");
 lab.innerHTML="Jul 10,2018 - These new SERP features - SERP is shorthand for <b>search</b> engine<b> results page- </b>have improved the experience for users, but they're also.."
+lab.setAttribute("style","color:#808080;font-size:18px;margin-top:5px");
 div.appendChild(lab);
 
 var h4=document.createElement("h4");
 h4.innerHTML="SERP:The 2018 Guide To Google Search Engine Results"
-h4.setAttribute("style","color:#254b7b;font-size:24px;");
+h4.setAttribute("style","color:#254b7b;font-size:24px;margin-top:5px;margin-bottom:2px");
 div.appendChild(h4);
 var lab1=document.createElement("label");
 
 lab1.innerHTML="https://iignitevisibility.com/serp"
-lab1.style.color="#057905"
-lab1.style.margintop="10px"
+lab1.setAttribute("style","color:#057905;font-size:19px;margin-top:0px;margin-bottom:0px");
 div.appendChild(lab1);
 var lab=document.createElement("p");
 lab.innerHTML="May 1,2018 - SERP refers to a<b> search</b> engine<b> results page- </b>the page that appears with a user's results when they type a <b>Search </b> into <b>Google </b>(or any <b>scratch.. </b>"
+lab.setAttribute("style","color:#808080;font-size:18px;margin-top:5px");
 div.appendChild(lab);
 
-  </script>
+
+</script>
 </body>
 </html>
