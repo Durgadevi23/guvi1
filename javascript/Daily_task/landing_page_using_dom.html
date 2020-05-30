@@ -6,9 +6,7 @@
 <body id="landing">
 <script>
 var p=document.getElementById("landing");
-
-//var d=document.createElement("div");
-p.setAttribute("style","background-color:#8F5BDC;width:70%;width:70%;margin-left:100px")
+p.setAttribute("style","background-color:#8F5BDC;width:70%;margin-left:0px;color:white")
 
 var div=document.createElement("div");
 var ul=document.createElement("ul");
@@ -44,17 +42,22 @@ div.appendChild(ul);
 document.body.appendChild(div);
 
 var div2=document.createElement("div");
-div2.setAttribute("style","width:500px;float:left;margin-top:-20px");
+div2.setAttribute("style","width:500px;float:left;");
 
 var p=document.createElement("p");
-p.setAttribute("style","font-size:60px;margin-left:50px;margin-top:50px;margin-bottom:0px;");
+p.setAttribute("style","font-size:60px;margin-left:100px;margin-top:50px;margin-bottom:0px;");
 p.innerHTML="Fly makes you faster";
 div2.appendChild(p);
 
-var p=document.createElement("p");
-p.setAttribute("style","font-size:24px;margin-left:50px;margin-top:0px;float:left;margin-bottom:0px;");
-p.innerHTML="New free template by uicookies.com. For more templates visit the site. Lorem ispum dolor sit amet,consectotur adipisicing elit"
-div2.appendChild(p);
+var p1=document.createElement("p");
+p1.setAttribute("style","font-size:24px;margin-left:100px;margin-top:0px;float:left;margin-bottom:0px;");
+p1.innerHTML="New free template by uicookies.com. For more templates visit the site. Lorem ispum dolor sit amet,consectotur adipisicing elit"
+div2.appendChild(p1);
+
+var b=document.createElement("button");
+b.setAttribute("style","width:30%;height:35px;margin-left:200px;margin-top:20px;border-radius:10px;background-color:#55b355;color:white;font-size:18px");
+b.innerHTML="See Pricing"
+div2.appendChild(b);
 document.body.appendChild(div2);
 
 var div3=document.createElement("div");
@@ -83,18 +86,33 @@ p3.placeholder="E-mail";
 div3.appendChild(p3);
 
 var r2=document.createElement("select");
-var p2=document.createElement("option");
+var p=document.createElement("option");
 r2.setAttribute("style","font-size:20px;width:81%;margin-left:20px;margin-top:20px;height:30px");
-p2.innerHTML="Type"
-r2.appendChild(p2);
+p.innerHTML="Type"
+r2.appendChild(p);
 div3.appendChild(r2);
 
-var b=document.createElement("button");
-b.innerHTML="Register";
-b.setAttribute("style","font-size:20px;width:81%;margin-left:20px;margin-top:20px;height:30px");
-div3.appendChild(b);
+var b1=document.createElement("button");
+b1.innerHTML="Register";
+b1.setAttribute("style","font-size:20px;width:81%;margin-left:20px;margin-top:20px;height:30px");
+div3.appendChild(b1);
 
 document.body.appendChild(div3);
-document.body.appendChild(d);
+
+var div4=document.createElement("div");
+div4.setAttribute("style","width:143%;height:400px;background-color:white;margin-right:50px")
+var p=document.createElement("p");
+p.setAttribute("style","color:black;margin-left:500px;font-size:22px;padding-top:70px");
+p.innerHTML="FEATURES"
+div4.appendChild(p);
+
+var p1=document.createElement("p");
+p1.setAttribute("style","color:black");
+p1.setAttribute("style","color:black;margin-left:480px;font-size:28px;padding-top:-5px");
+p1.innerHTML="<b>App features</b>"
+div4.appendChild(p1);
+
+document.body.appendChild(div4);
+
 </script>
 </body>
