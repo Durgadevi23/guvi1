@@ -1,5 +1,5 @@
 //2.1 Update the count of Person 2 inside readers Array in Javascript;
-function library{
+function library(){
 
 var library = [
 {
