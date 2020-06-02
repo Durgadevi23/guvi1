@@ -12,7 +12,7 @@ request.onload = function(){
 var jsonData = JSON.parse(this.response)
 for(var i in jsonData)
 {
-  //displaying country name and flag url
+  //displaying country name and borders
   console.log("country name:",jsonData[i].name,"sharing borders:" ,jsonData[i].borders)
 }
 }
