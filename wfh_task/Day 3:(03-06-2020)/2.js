@@ -7,7 +7,7 @@ var odd = array.filter (function(t){
 });
 console.log(odd)
 
-//4.2 Convert all the strings to title caps in a string array
+//2.2 Convert all the strings to title caps in a string array
 var str = "durga devi deepi"
 var demo = function titlecase(str) {
  //to convert this with titlecase
