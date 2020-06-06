@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet"
-href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
 <style>
 table,th,td{
 border:1px solid #716a6c;
-border-collapse:collapse:
+border-collapse:collapse! important;
 margin-top:20px;
 }
  .container{
@@ -18,25 +16,29 @@ margin-top:20px;
  color:#4d5156;
  font-family:inherit;
  line-height:20px;
+ padding-left:270px;
+ 
  }
 .align{
  width:100%;
  heigth:30px;
  color:black;
  padding-left:100px;
+ }
  
-}
- 
- h4{
- color:#254b7b;
+ .head{
+ color: #5E16AB;
  font-size:24px;
  font-family:arial,sans-serif;
- }
+ margin:15px 0px 10px;
+}
  a{
- color:#057905;
+color: #0FA027;
+ font-size:18px;
  }
  .topnav {
   overflow: hidden;
+  padding-left: 0px;
  }
 
 .topnav a {
@@ -47,38 +49,43 @@ margin-top:20px;
   padding-left: 30px;
   text-decoration: none;
   font-size: 17px;
-  margin-bottom: 0px;
-}
+ }
 
 .input input[type=text] {
   padding: 6px;
-  margin-left:80px;
+  margin-left:270px;
   width:60%;
   font-family:Arial; 
  font-size: 17px;
 }
 #result{
-padding-left:300px;
+padding-left:180px;
 }
 #home{
 padding-left:0px;
+color:blue;
 }
 #dropdown{
 padding-left:95%;
 border:none;
 margin-top:0px;
 }
+label{
+font-size:18px;
+color:#8E928E;
+padding-left:10px;
+}
 </style>
 </head>
 <body>
 <div class="input">
-<img src="google.png" style="width:200px;height:80px"/><input type="text" value="Google search page"> 
-
-<i class="fas fa-box" style="font-size:24px;padding-left:90px"></i>
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="position:absolute;width:160px;height:60px"><input type="text" value="Google search page"> 
+<i class="material-icons" style="font-size:28px;padding:0px 0px 10px 90px;">&#xe5c3;</i>  
 <i class="fa fa-bell" style="font-size:24px;padding-left:10px"></i>
 <i class="fa fa-user-circle" style="font-size:28px;padding-left:10px"></i>
+
 </div>
-<div class="container">
+<div class="container" style="padding-top:20px">
 <div class="topnav">
   <a href="#home"id="home">All</a>
   <a href="#about">images</a>
@@ -92,27 +99,27 @@ margin-top:0px;
   <hr>
   <div class="container" id="contain">
   <label>About 866,000,000 results(0.77 seconds)</label>
-  <h4>Elements of Google Search Engine Results Page. SEO for beginners...</h4>
-  <a href="google.com">https://yoast.com > SEO blog > SEO basics</a>
+  <p class="head">Elements of Google Search Engine Results Page. SEO for beginners...</p>
+  <a href="google.com">https://yoast.com > SEO blog > SEO basics </a>
   <label>Feb 26,2018 - If you <b>Google</b> something you'll end up on the <b>Google Search </b>Engine <b>Results Page.</b> What does this <b>page</b> show? Which elements do you see. ...</label>
   <table class="align"> 
   <tr  style="color:#716a6c;height:50px;width:100px;">
-  <th>people also ask</th>
+  <td> <b>people also ask</b></td>
   </tr>
   <tr>
-  <td>What is a Google Search results page?
+  <td> What is a Google Search results page?
   <select id="dropdown">
   <option></option>
   </select></td>
    </tr>
   <tr>
-  <td>What do Google search resutls mean?
+  <td> What do Google search resutls mean?
   <select id="dropdown">
   <option></option>
   </select></td>
   </tr>
   <tr>
-  <td>What is SERP SEO?
+  <td> What is SERP SEO?
   <select id="dropdown">
   <option></option>
   </select></td>
@@ -124,7 +131,7 @@ margin-top:0px;
   </select></td>
   </tr>
   </table><br>
-  <h4>Search Engine Results Page - Wikipedia</h4>
+  <p class="head">Search Engine Results Page - Wikipedia</p>
   <a href="google.com">https://e.wikipedia.org/wiki/search_engine_results_page> SEO blog > SEO basics</a>
   <label>Search Engine Results<b> Page</b> are the<b> Pages</b> displayed by the search engines in response...Rich snippets are displayed by<b> Google</b> in<b>search results Page</b> When a website contains content in structured data markup. Structured data...</label>
   <label>components</label>
@@ -132,14 +139,14 @@ margin-top:0px;
   <label>Organic results</label>
   <label>Rich snippets</label>
  <br>  
-  <h4>2018's Guide to Google Search Engine Results Page(SERP)- oberlo</h4>
+  <p class="head">2018's Guide to Google Search Engine Results Page(SERP)- oberlo</p>
   <a href="google.com">https://oberlo.com > blog </a>
   <label>Jul 10,2018 - These new SERP features - SERP is shorthand for <b>search</b> engine<b> results page- </b>have improved the experience for users, but they're also..</label>
   <br><br>
   
-  <h4>SERP:The 2018 Guide To Google Search Engine Results</h4>
+  <p class="head">SERP:The 2018 Guide To Google Search Engine Results</p>
   <a href="google.com">https://iignitevisibility.com/serp </a>
-  <label>May 1,2018 - SERP refers to a<b> search</b> engine<b> results page- </b>the page that appears with a user's results when they type a <b>Search </b> into <b>Google </b>(or any <b>scratch.. </b> </label>
+  <label>May 1,2018 - SERP refers to a<b> search</b> engine<b> results page- </b>the page that appears with a user's results when they type a <b>Search </b> into <b>Google </b>(or any <b>scratch..) </b> </label>
 
  </div>
   </body>
