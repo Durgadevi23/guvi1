@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-        </head>
+<title>Pancard using DOM</title>
+</head>
 <body id="pancard">
 <script>
 var a=document.getElementById("pancard");
@@ -18,19 +19,8 @@ h4.setAttribute("style","color:white")
 h4.innerHTML="Request For New PAN Card Or/And Changes Or Correction in PAN DATA";
 topic.appendChild(h4);
 var h2=document.createElement("h4");
-h2.innerHTML="Feilds marked with";
+h2.innerHTML="Feilds marked with (asterisk) are mandatory. To avoid mistake(s). Please refer. guideliness and readliness";
 h2.setAttribute("style","color:white")
-var s=document.createElement("span")
-s.innerHTML="*";
-s.setAttribute("style","color:red")
-h2.appendChild(s);
-var s2=document.createElement("SPAN")
-s2.innerHTML="(asterisk) are mandatory. To avoid mistake(s). Please refer.  ";
-s2.setAttribute("style","color:white");
-h2.appendChild(s2);
-var u=document.createElement("SPAN");
-u.innerHTML="guideliness and readliness";
-h2.appendChild(u);
 topic.appendChild(h2);
 table.appendChild(topic);
 
@@ -50,6 +40,7 @@ var t=document.createTextNode("Whether citizen of India.");
 p.appendChild(t);
 var y=document.createElement("label");
 y.innerHTML="Yes";
+y.setAttribute("style","margin-left:60px");
 p.appendChild(y);
 var r1=document.createElement("input");
 r1.setAttribute("type","radio");
@@ -61,8 +52,6 @@ var r2=document.createElement("input");
 r2.setAttribute("type","radio");
 p.appendChild(r2);
 c2.appendChild(p);
-
-
 
 var  r2=table.insertRow(1);
 var c1=r2.insertCell(0);
